@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/69c2fb4df7.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    }
+
+    #img1{
+        margin-left: 50px;
+        margin-top: 25px;
+        border-radius: 70px;
+        filter: blur(1px);  
+    }
+
+    #img2{
+        margin-top: 60px;
+        margin-left: -750px;
+        margin-bottom: 50px; border-radius: 10px;
+        transform: rotate(0.5turn);
+    }
+
+    #admin_nm{
+        margin-top: -400px; margin-left: 605px;
+        font-size: 30px; position: absolute;
+        font-family: Arial;
+        font-weight: 600;
+        color: #281e5d;
+    }
+
+    .icon{
+        position: absolute; color: navy;
+        margin-top: 140px; margin-left: -180px;
+    }
+
+    #u_nm{
+        position: absolute; margin-top: 300px; margin-left: -255px; border: 1px solid #281e5d;
+        padding: 10px 22px; background: transparent;
+    }
+
+    #pwd{
+        position: absolute; margin-top: 350px; margin-left: -255px; border: 1px solid #281e5d;
+        padding: 10px 22px;background: transparent;
+    }
+
+    #lb{
+        position: absolute; margin-top: 400px; margin-left: -260px; color: darkblue;
+    }
+
+    button{
+        position: absolute; margin-top: 440px; margin-left: -190px; border: none;color: aliceblue;
+        background-color: cornflowerblue; height: 40px; width: 80px; border-radius: 12px;
+    }
+
+    button:active{
+        background-color: aliceblue; color: blue; border: 1px solid blue;
+    }
+
+    #fpwd{
+        color: darkgrey;
+        position: absolute; margin-top: 402px; margin-left: -150px;
+    }
+
+    #crt_acc{
+        color:darkgrey;
+        position: absolute; margin-top: 500px; margin-left: -200px;
+    }
+</style>
+<body>
+    <div class="overlay">
+        <img src="image/mountains.jpg" alt="--network--issue--" height="602px" width="1250px" id="img1" >
+        <img src="image/istockphoto.jpg" alt="--network--issue--" height="475px" width="300px" id="img2">
+        <i class="fa-sharp fa-solid fa-circle-user fa-4x icon"></i>
+        <p id="admin_nm">ADMIN LOGIN</p>
+        <input type="text" placeholder="Username" id="u_nm">
+        <input type="password" placeholder="Password" id="pwd">
+        <label id="lb"><input type="checkbox" id="re">Remember</label>
+        <a href="" id="fpwd">Forget Password?</a>
+        <button onclick="alert('Login Successfully')">LOGIN</button>
+        <a href="" id="crt_acc">Create Account ?</a>
+    </div>
+</body>
